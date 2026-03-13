@@ -1,0 +1,136 @@
+:root {
+  --accent: #0ea5a4;
+  --muted: #889ec9;
+  --bg-1: #afdaeb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-1);
+
+  color: #0f1724;
+}
+
+.container {
+  max-width: 900px;
+  margin: 32px 10px;
+  padding: 24px;
+}
+
+.hero {
+  margin-bottom: 16px;
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background: rgba(14, 165, 164, 0.08);
+  transform: translateY(-1px);
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+
+}
+.btn.link {
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid transparent;
+}
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(14, 165, 164, 0.12);
+}
+
+.btn.info {
+  background: #3b82f6;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.12);
+}
+.btn.success {
+  background: #10b981;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.12);
+}
+.btn.warning {
+  background: #f59e0b;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.12);
+}
+.btn.danger {
+  background: #ef4444;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.12);
+}
+.btn.secondary {
+  background: #6b7280;
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(107, 114, 128, 0.08);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(0.98);
+}
+.btn:active {
+  transform: translateY(0);
+  filter: brightness(0.95);
+}
+.btn:focus {
+  outline: 2px solid rgba(0, 0, 0, 0.06);
+  outline-offset: 2px;
+}
+
+.header-title {
+  font-size: 1.25rem;
+  margin-right: auto;
+  color: #0f1724;
+  font-weight: 700;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 14px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+.article-image{display:block;width:100%;max-width:560px;height:auto;border-radius:8px;margin-bottom:12px;object-fit:cover}
+
+.small {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: 36px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

@@ -3,6 +3,8 @@ package com.github.DNeberize.demo.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -44,7 +46,10 @@ public class UserService {
 
     @Transactional(readOnly = true)
     public List<AppUser> getLeaderboard() {
-        return appUserRepository.findTop12ByOrderByWinsDescBestStreakDescGamesPlayedDescUsernameAsc();
+        return appUserRepository.findAll(PageRequest.of(0, 12,
+            Sort.by(Sort.Order.desc("wins"), Sort.Order.desc("bestStreak"),
+                Sort.Order.desc("gamesPlayed"), Sort.Order.asc("username"))))
+            .getContent();
     }
 
     public void signOut(HttpSession session) {

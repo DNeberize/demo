@@ -3,13 +3,11 @@ package com.github.DNeberize.demo.web;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.github.DNeberize.demo.service.UserService;
 import com.github.DNeberize.demo.service.WordleGameService;
-import com.github.DNeberize.demo.web.dto.LoginForm;
 
 import jakarta.servlet.http.HttpSession;
 
@@ -22,11 +20,6 @@ public class GamePageController {
     public GamePageController(UserService userService, WordleGameService wordleGameService) {
         this.userService = userService;
         this.wordleGameService = wordleGameService;
-    }
-
-    @ModelAttribute("loginForm")
-    public LoginForm loginForm() {
-        return new LoginForm();
     }
 
     @GetMapping("/")

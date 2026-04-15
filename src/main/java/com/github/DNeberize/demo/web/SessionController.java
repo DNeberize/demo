@@ -1,12 +1,11 @@
 package com.github.DNeberize.demo.web;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.github.DNeberize.demo.service.UserService;
-import com.github.DNeberize.demo.web.dto.LoginForm;
 
 import jakarta.servlet.http.HttpSession;
 
@@ -20,9 +19,10 @@ public class SessionController {
     }
 
     @PostMapping("/session/user")
-    public String signIn(@ModelAttribute LoginForm loginForm, HttpSession session, RedirectAttributes redirectAttributes) {
+    public String signIn(@RequestParam String username, HttpSession session,
+            RedirectAttributes redirectAttributes) {
         try {
-            userService.signIn(loginForm.getUsername(), session);
+            userService.signIn(username, session);
             redirectAttributes.addFlashAttribute("bannerMessage", "Player profile is ready.");
         }
         catch (IllegalArgumentException ex) {

@@ -1,0 +1,75 @@
+package com.github.DNeberize.demo.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import com.github.DNeberize.demo.service.UserService;
+import com.github.DNeberize.demo.service.WordleGameService;
+import com.github.DNeberize.demo.web.dto.LoginForm;
+
+import jakarta.servlet.http.HttpSession;
+
+@Controller
+public class GamePageController {
+
+    private final UserService userService;
+    private final WordleGameService wordleGameService;
+
+    public GamePageController(UserService userService, WordleGameService wordleGameService) {
+        this.userService = userService;
+        this.wordleGameService = wordleGameService;
+    }
+
+    @ModelAttribute("loginForm")
+    public LoginForm loginForm() {
+        return new LoginForm();
+    }
+
+    @GetMapping("/")
+    public String home(Model model, HttpSession session) {
+        model.addAttribute("leaderboard", userService.getLeaderboard());
+        model.addAttribute("dictionarySize", wordleGameService.getDictionarySize());
+        userService.getCurrentUser(session).ifPresent(currentUser -> {
+            model.addAttribute("currentUser", currentUser);
+            model.addAttribute("homeView", wordleGameService.buildHomeView(currentUser.getId()));
+        });
+        return "index";
+    }
+
+    @GetMapping("/about")
+    public String about(Model model, HttpSession session) {
+        model.addAttribute("leaderboard", userService.getLeaderboard());
+        userService.getCurrentUser(session).ifPresent(currentUser -> model.addAttribute("currentUser", currentUser));
+        return "about";
+    }
+
+    @GetMapping("/leaderboard")
+    public String leaderboard(Model model, HttpSession session) {
+        model.addAttribute("leaderboard", userService.getLeaderboard());
+        userService.getCurrentUser(session).ifPresent(currentUser -> model.addAttribute("currentUser", currentUser));
+        return "leaderboard";
+    }
+
+    @PostMapping("/game/new")
+    public String newGame(HttpSession session, RedirectAttributes redirectAttributes) {
+        return userService.getCurrentUser(session)
+                .map(currentUser -> {
+                    try {
+                        wordleGameService.startNewGame(currentUser.getId());
+                        redirectAttributes.addFlashAttribute("bannerMessage", "New round started.");
+                    }
+                    catch (IllegalStateException ex) {
+                        redirectAttributes.addFlashAttribute("bannerError", ex.getMessage());
+                    }
+                    return "redirect:/";
+                })
+                .orElseGet(() -> {
+                    redirectAttributes.addFlashAttribute("bannerError", "Choose a player name first.");
+                    return "redirect:/";
+                });
+    }
+}

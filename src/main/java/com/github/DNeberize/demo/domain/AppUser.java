@@ -11,6 +11,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "app_user")
@@ -20,6 +22,8 @@ public class AppUser {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "Username is required.")
+    @Size(min = 3, max = 24, message = "Username must be 3 to 24 characters.")
     @Column(nullable = false, unique = true, length = 24)
     private String username;
 

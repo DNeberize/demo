@@ -15,8 +15,8 @@
 
     <section class="panel hero-panel">
         <div>
-            <h1 class="hero-title">Guess the five-letter word.</h1>
-            <p class="hero-copy">Six tries. Letters only. Scores and stats are saved.</p>
+            <h1 class="hero-title">${heroTitle}</h1>
+            <p class="hero-copy">${heroCopy}</p>
         </div>
         <div class="hero-meta">
             <div class="hero-stat">
@@ -102,7 +102,7 @@
                     </div>
                 </div>
                 <@ui.leaderboardTable players=leaderboard currentUserName=currentUser.username/>
-                <a class="button button-secondary full-width" href="/leaderboard">View All</a>
+                <a class="button  mt-10 full-width" href="/leaderboard">View All</a>
             </aside>
         </div>
 

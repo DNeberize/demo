@@ -10,9 +10,11 @@
     </div>
 
     <nav class="site-nav">
-        <@ui.navLink href="/" label="Play" currentPath=currentPath/>
-        <@ui.navLink href="/leaderboard" label="Leaderboard" currentPath=currentPath/>
-        <@ui.navLink href="/about" label="Rules" currentPath=currentPath/>
+        <@ui.navLink href="/?lang=en" label=springMacroRequestContext.getMessage("nav.play") currentPath=currentPath/>
+        <@ui.navLink href="/leaderboard?lang=en" label=springMacroRequestContext.getMessage("nav.leaderboard") currentPath=currentPath/>
+        <@ui.navLink href="/about?lang=en" label=springMacroRequestContext.getMessage("nav.rules") currentPath=currentPath/>
+        <a href="/?lang=tr" class="nav-link">TR</a>
+        <a href="/?lang=en" class="nav-link">EN</a>
     </nav>
 
     <div class="session-block">

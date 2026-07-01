@@ -15,17 +15,17 @@
 
     <section class="panel hero-panel">
         <div>
-            <h1 class="hero-title">${heroTitle}</h1>
-            <p class="hero-copy">${heroCopy}</p>
+            <h1 class="hero-title">${springMacroRequestContext.getMessage("home.hero")}</h1>
+            <p class="hero-copy">${springMacroRequestContext.getMessage("home.subtitle")}</p>
         </div>
         <div class="hero-meta">
             <div class="hero-stat">
                 <span class="hero-stat-value">${dictionarySize}</span>
-                <span class="hero-stat-label">valid guess words</span>
+                <span class="hero-stat-label">${springMacroRequestContext.getMessage("home.validWords")}</span>
             </div>
             <div class="hero-stat">
                 <span class="hero-stat-value">6</span>
-                <span class="hero-stat-label">tries per round</span>
+                <span class="hero-stat-label">${springMacroRequestContext.getMessage("home.tries")}</span>
             </div>
         </div>
     </section>
@@ -138,7 +138,7 @@
                         <span>Name</span>
                         <input id="username" name="username" class="guess-input" type="text" maxlength="24" autocomplete="off" required>
                     </label>
-                    <button class="button button-primary" type="submit">Start</button>
+                    <button class="button button-primary" type="submit">${springMacroRequestContext.getMessage("home.start")}</button>
                 </form>
             </section>
 

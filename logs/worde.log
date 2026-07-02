@@ -2807,3 +2807,783 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.security.core.u
 	Maximum pool size: undefined/unknown
 2026-07-01T18:18:27.820+04:00  INFO 30960 --- [worde] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 2026-07-01T18:18:27.824+04:00  INFO 30960 --- [worde] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:02:51.645+04:00  INFO 21232 --- [worde] [main] c.g.DNeberize.demo.DemoApplicationTests  : Starting DemoApplicationTests using Java 26 with PID 21232 (started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:02:51.646+04:00 DEBUG 21232 --- [worde] [main] c.g.DNeberize.demo.DemoApplicationTests  : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:02:51.647+04:00  INFO 21232 --- [worde] [main] c.g.DNeberize.demo.DemoApplicationTests  : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:02:52.391+04:00  INFO 21232 --- [worde] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:02:52.434+04:00  INFO 21232 --- [worde] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:02:53.069+04:00  INFO 21232 --- [worde] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:02:53.126+04:00  INFO 21232 --- [worde] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-07-02T06:02:53.494+04:00  INFO 21232 --- [worde] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:02:53.517+04:00  INFO 21232 --- [worde] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-02T06:02:53.658+04:00  INFO 21232 --- [worde] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:worde-test user=SA
+2026-07-02T06:02:53.660+04:00  INFO 21232 --- [worde] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-02T06:02:53.707+04:00  INFO 21232 --- [worde] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:worde-test]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-TEST/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:02:54.473+04:00  INFO 21232 --- [worde] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:02:54.521+04:00  INFO 21232 --- [worde] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:02:54.605+04:00  INFO 21232 --- [worde] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-02T06:02:55.176+04:00  INFO 21232 --- [worde] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:02:55.362+04:00  INFO 21232 --- [worde] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:02:55.820+04:00  INFO 21232 --- [worde] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-07-02T06:02:55.821+04:00  INFO 21232 --- [worde] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-07-02T06:02:55.829+04:00  INFO 21232 --- [worde] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:02:55.838+04:00  INFO 21232 --- [worde] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 17 ms
+2026-07-02T06:02:55.894+04:00  INFO 21232 --- [worde] [main] c.g.DNeberize.demo.DemoApplicationTests  : Started DemoApplicationTests in 4.517 seconds (process running for 5.455)
+2026-07-02T06:02:55.901+04:00  INFO 21232 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:02:57.244+04:00  INFO 21232 --- [worde] [main] c.g.D.demo.web.SessionController         : User signed in with username=tester01
+2026-07-02T06:02:57.319+04:00  WARN 21232 --- [worde] [main] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2026-07-02T06:02:57.496+04:00  INFO 21232 --- [worde] [main] c.g.D.demo.web.SessionController         : User signed in with username=tester02
+2026-07-02T06:02:57.504+04:00  WARN 21232 --- [worde] [main] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2026-07-02T06:02:57.656+04:00  INFO 21232 --- [worde] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.github.DNeberize.demo.ExamFeatureTests]: ExamFeatureTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-02T06:02:57.660+04:00  INFO 21232 --- [worde] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.github.DNeberize.demo.DemoApplication for test class com.github.DNeberize.demo.ExamFeatureTests
+2026-07-02T06:02:57.666+04:00  INFO 21232 --- [worde] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2026-07-02T06:02:57.697+04:00  INFO 21232 --- [worde] [main] c.g.DNeberize.demo.ExamFeatureTests      : Starting ExamFeatureTests using Java 26 with PID 21232 (started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:02:57.697+04:00 DEBUG 21232 --- [worde] [main] c.g.DNeberize.demo.ExamFeatureTests      : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:02:57.697+04:00  INFO 21232 --- [worde] [main] c.g.DNeberize.demo.ExamFeatureTests      : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:02:57.967+04:00  INFO 21232 --- [worde] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:02:57.983+04:00  INFO 21232 --- [worde] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:02:58.066+04:00  INFO 21232 --- [worde] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:02:58.079+04:00  INFO 21232 --- [worde] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:02:58.080+04:00  INFO 21232 --- [worde] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-07-02T06:02:58.083+04:00  INFO 21232 --- [worde] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:worde-exam user=SA
+2026-07-02T06:02:58.083+04:00  INFO 21232 --- [worde] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-07-02T06:02:58.083+04:00  INFO 21232 --- [worde] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:worde-exam]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-EXAM/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:02:58.125+04:00  INFO 21232 --- [worde] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:02:58.132+04:00  INFO 21232 --- [worde] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:02:58.320+04:00  INFO 21232 --- [worde] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:02:58.359+04:00  INFO 21232 --- [worde] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:02:58.458+04:00  INFO 21232 --- [worde] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-07-02T06:02:58.458+04:00  INFO 21232 --- [worde] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-07-02T06:02:58.460+04:00  INFO 21232 --- [worde] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:02:58.464+04:00  INFO 21232 --- [worde] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 6 ms
+2026-07-02T06:02:58.473+04:00  INFO 21232 --- [worde] [main] c.g.DNeberize.demo.ExamFeatureTests      : Started ExamFeatureTests in 0.807 seconds (process running for 8.034)
+2026-07-02T06:02:58.473+04:00  INFO 21232 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:02:59.375+04:00  INFO 21232 --- [worde] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:02:59.390+04:00  INFO 21232 --- [worde] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-02T06:02:59.394+04:00  INFO 21232 --- [worde] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-02T06:02:59.401+04:00  INFO 21232 --- [worde] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:02:59.406+04:00  INFO 21232 --- [worde] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-07-02T06:02:59.409+04:00  INFO 21232 --- [worde] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-07-02T06:04:02.050+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Starting DemoApplication using Java 21.0.10 with PID 7052 (C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo\target\classes started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:04:02.053+04:00 DEBUG 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:04:02.053+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:04:02.097+04:00  INFO 7052 --- [worde] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-02T06:04:02.097+04:00  INFO 7052 --- [worde] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-02T06:04:02.835+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:04:02.885+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:04:03.582+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-02T06:04:03.594+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-02T06:04:03.595+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-07-02T06:04:03.637+04:00  INFO 7052 --- [worde] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1540 ms
+2026-07-02T06:04:03.905+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:04:03.966+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-07-02T06:04:04.309+04:00  INFO 7052 --- [worde] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:04:04.329+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-02T06:04:04.483+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/worde-db user=SA
+2026-07-02T06:04:04.484+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-02T06:04:04.532+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/worde-db]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-DB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:04:05.243+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:04:05.289+04:00  INFO 7052 --- [worde] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:04:05.385+04:00  INFO 7052 --- [worde] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-02T06:04:06.158+04:00  INFO 7052 --- [worde] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:04:06.327+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:04:06.755+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:04:06.826+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-02T06:04:06.836+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Started DemoApplication in 5.161 seconds (process running for 5.62)
+2026-07-02T06:04:06.843+04:00  INFO 7052 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:04:29.753+04:00  INFO 7052 --- [worde] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-02T06:04:29.754+04:00  INFO 7052 --- [worde] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-02T06:04:29.757+04:00  INFO 7052 --- [worde] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-07-02T06:05:06.859+04:00  INFO 7052 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:05:37.473+04:00  INFO 7052 --- [worde] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-07-02T06:05:37.477+04:00  INFO 7052 --- [worde] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-02T06:05:37.494+04:00  INFO 7052 --- [worde] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-02T06:05:37.497+04:00  INFO 7052 --- [worde] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:05:37.501+04:00  INFO 7052 --- [worde] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-02T06:05:37.549+04:00  INFO 7052 --- [worde] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-02T06:05:37.643+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Starting DemoApplication using Java 21.0.10 with PID 7052 (C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo\target\classes started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:05:37.643+04:00 DEBUG 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:05:37.643+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:05:37.829+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:05:37.844+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:05:37.947+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-02T06:05:37.949+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-02T06:05:37.949+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-07-02T06:05:37.966+04:00  INFO 7052 --- [worde] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 321 ms
+2026-07-02T06:05:38.029+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:05:38.046+04:00  INFO 7052 --- [worde] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:05:38.047+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-07-02T06:05:38.057+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:file:./data/worde-db user=SA
+2026-07-02T06:05:38.058+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-07-02T06:05:38.059+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/worde-db]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-DB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:05:38.142+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:05:38.146+04:00  INFO 7052 --- [worde] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:05:38.368+04:00  INFO 7052 --- [worde] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:05:38.406+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:05:38.467+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:05:38.477+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-02T06:05:38.480+04:00  INFO 7052 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:05:38.480+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Started DemoApplication in 0.857 seconds (process running for 97.265)
+2026-07-02T06:05:38.651+04:00  INFO 7052 --- [worde] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-02T06:05:50.369+04:00  INFO 32008 --- [worde] [main] c.g.DNeberize.demo.DemoApplicationTests  : Starting DemoApplicationTests using Java 26 with PID 32008 (started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:05:50.369+04:00 DEBUG 32008 --- [worde] [main] c.g.DNeberize.demo.DemoApplicationTests  : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:05:50.370+04:00  INFO 32008 --- [worde] [main] c.g.DNeberize.demo.DemoApplicationTests  : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:05:51.094+04:00  INFO 32008 --- [worde] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:05:51.137+04:00  INFO 32008 --- [worde] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:05:51.740+04:00  INFO 32008 --- [worde] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:05:51.792+04:00  INFO 32008 --- [worde] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-07-02T06:05:52.193+04:00  INFO 32008 --- [worde] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:05:52.213+04:00  INFO 32008 --- [worde] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-02T06:05:52.336+04:00  INFO 32008 --- [worde] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:worde-test user=SA
+2026-07-02T06:05:52.337+04:00  INFO 32008 --- [worde] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-02T06:05:52.384+04:00  INFO 32008 --- [worde] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:worde-test]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-TEST/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:05:53.131+04:00  INFO 32008 --- [worde] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:05:53.173+04:00  INFO 32008 --- [worde] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:05:53.249+04:00  INFO 32008 --- [worde] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-02T06:05:53.793+04:00  INFO 32008 --- [worde] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:05:53.946+04:00  INFO 32008 --- [worde] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:05:54.470+04:00  INFO 32008 --- [worde] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-07-02T06:05:54.470+04:00  INFO 32008 --- [worde] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-07-02T06:05:54.481+04:00  INFO 32008 --- [worde] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:05:54.494+04:00  INFO 32008 --- [worde] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 24 ms
+2026-07-02T06:05:54.556+04:00  INFO 32008 --- [worde] [main] c.g.DNeberize.demo.DemoApplicationTests  : Started DemoApplicationTests in 4.422 seconds (process running for 5.354)
+2026-07-02T06:05:54.564+04:00  INFO 32008 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:05:56.111+04:00  INFO 32008 --- [worde] [main] c.g.D.demo.web.SessionController         : User signed in with username=tester01
+2026-07-02T06:05:56.194+04:00  WARN 32008 --- [worde] [main] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2026-07-02T06:05:56.377+04:00  INFO 32008 --- [worde] [main] c.g.D.demo.web.SessionController         : User signed in with username=tester02
+2026-07-02T06:05:56.386+04:00  WARN 32008 --- [worde] [main] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2026-07-02T06:05:56.547+04:00  INFO 32008 --- [worde] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.github.DNeberize.demo.ExamFeatureTests]: ExamFeatureTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-02T06:05:56.551+04:00  INFO 32008 --- [worde] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.github.DNeberize.demo.DemoApplication for test class com.github.DNeberize.demo.ExamFeatureTests
+2026-07-02T06:05:56.557+04:00  INFO 32008 --- [worde] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2026-07-02T06:05:56.588+04:00  INFO 32008 --- [worde] [main] c.g.DNeberize.demo.ExamFeatureTests      : Starting ExamFeatureTests using Java 26 with PID 32008 (started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:05:56.588+04:00 DEBUG 32008 --- [worde] [main] c.g.DNeberize.demo.ExamFeatureTests      : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:05:56.588+04:00  INFO 32008 --- [worde] [main] c.g.DNeberize.demo.ExamFeatureTests      : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:05:56.845+04:00  INFO 32008 --- [worde] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:05:56.865+04:00  INFO 32008 --- [worde] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:05:56.957+04:00  INFO 32008 --- [worde] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:05:56.980+04:00  INFO 32008 --- [worde] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:05:56.981+04:00  INFO 32008 --- [worde] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-07-02T06:05:56.984+04:00  INFO 32008 --- [worde] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:worde-exam user=SA
+2026-07-02T06:05:56.985+04:00  INFO 32008 --- [worde] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-07-02T06:05:56.985+04:00  INFO 32008 --- [worde] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:worde-exam]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-EXAM/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:05:57.037+04:00  INFO 32008 --- [worde] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:05:57.046+04:00  INFO 32008 --- [worde] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:05:57.227+04:00  INFO 32008 --- [worde] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:05:57.255+04:00  INFO 32008 --- [worde] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:05:57.333+04:00  INFO 32008 --- [worde] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-07-02T06:05:57.333+04:00  INFO 32008 --- [worde] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-07-02T06:05:57.334+04:00  INFO 32008 --- [worde] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:05:57.338+04:00  INFO 32008 --- [worde] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 5 ms
+2026-07-02T06:05:57.347+04:00  INFO 32008 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:05:57.347+04:00  INFO 32008 --- [worde] [main] c.g.DNeberize.demo.ExamFeatureTests      : Started ExamFeatureTests in 0.79 seconds (process running for 8.145)
+2026-07-02T06:05:58.130+04:00  INFO 32008 --- [worde] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:05:58.141+04:00  INFO 32008 --- [worde] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-02T06:05:58.144+04:00  INFO 32008 --- [worde] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-02T06:05:58.150+04:00  INFO 32008 --- [worde] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:05:58.154+04:00  INFO 32008 --- [worde] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-07-02T06:05:58.155+04:00  INFO 32008 --- [worde] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-07-02T06:06:04.514+04:00  INFO 7052 --- [worde] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-02T06:06:04.515+04:00  INFO 7052 --- [worde] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-02T06:06:04.516+04:00  INFO 7052 --- [worde] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-07-02T06:06:04.544+04:00  INFO 7052 --- [worde] [http-nio-8080-exec-1] freemarker.beans                         : Detected multiple classes with the same name, "com.github.DNeberize.demo.domain.AppUser". Assuming it was a class-reloading. Clearing class introspection caches to release old data.
+2026-07-02T06:06:31.827+04:00  INFO 7052 --- [worde] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2026-07-02T06:06:31.830+04:00  INFO 7052 --- [worde] [Thread-6] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-02T06:06:31.834+04:00  INFO 7052 --- [worde] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-02T06:06:31.837+04:00  INFO 7052 --- [worde] [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:06:31.838+04:00  INFO 7052 --- [worde] [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-07-02T06:06:31.874+04:00  INFO 7052 --- [worde] [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-07-02T06:06:31.946+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Starting DemoApplication using Java 21.0.10 with PID 7052 (C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo\target\classes started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:06:31.947+04:00 DEBUG 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:06:31.947+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:06:32.102+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:06:32.114+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:06:32.217+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-02T06:06:32.217+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-02T06:06:32.217+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-07-02T06:06:32.249+04:00  INFO 7052 --- [worde] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 300 ms
+2026-07-02T06:06:32.292+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:06:32.311+04:00  INFO 7052 --- [worde] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:06:32.312+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-07-02T06:06:32.321+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:file:./data/worde-db user=SA
+2026-07-02T06:06:32.321+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-07-02T06:06:32.322+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/worde-db]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-DB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:06:32.393+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:06:32.395+04:00  INFO 7052 --- [worde] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:06:32.624+04:00  INFO 7052 --- [worde] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:06:32.659+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:06:32.725+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:06:32.735+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-02T06:06:32.739+04:00  INFO 7052 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:06:32.739+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Started DemoApplication in 0.81 seconds (process running for 151.523)
+2026-07-02T06:06:32.875+04:00  INFO 7052 --- [worde] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-02T06:07:11.368+04:00  INFO 7052 --- [worde] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-07-02T06:07:11.369+04:00  INFO 7052 --- [worde] [Thread-10] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-02T06:07:11.375+04:00  INFO 7052 --- [worde] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-02T06:07:11.377+04:00  INFO 7052 --- [worde] [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:07:11.378+04:00  INFO 7052 --- [worde] [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-07-02T06:07:11.422+04:00  INFO 7052 --- [worde] [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-07-02T06:07:11.516+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Starting DemoApplication using Java 21.0.10 with PID 7052 (C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo\target\classes started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:07:11.519+04:00 DEBUG 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:07:11.519+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:07:11.756+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:07:11.773+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:07:11.919+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-02T06:07:11.920+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-02T06:07:11.920+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-07-02T06:07:11.943+04:00  INFO 7052 --- [worde] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 421 ms
+2026-07-02T06:07:11.995+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:07:12.021+04:00  INFO 7052 --- [worde] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:07:12.022+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-07-02T06:07:12.033+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn30: url=jdbc:h2:file:./data/worde-db user=SA
+2026-07-02T06:07:12.033+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-07-02T06:07:12.034+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/worde-db]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-DB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:07:12.122+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:07:12.127+04:00  INFO 7052 --- [worde] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:07:12.369+04:00  INFO 7052 --- [worde] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:07:12.408+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:07:12.473+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:07:12.484+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-02T06:07:12.486+04:00  INFO 7052 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:07:12.486+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Started DemoApplication in 1.003 seconds (process running for 191.271)
+2026-07-02T06:07:12.602+04:00  INFO 7052 --- [worde] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-02T06:07:13.484+04:00  INFO 25400 --- [worde] [main] c.g.DNeberize.demo.DemoApplicationTests  : Starting DemoApplicationTests using Java 26 with PID 25400 (started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:07:13.484+04:00 DEBUG 25400 --- [worde] [main] c.g.DNeberize.demo.DemoApplicationTests  : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:07:13.486+04:00  INFO 25400 --- [worde] [main] c.g.DNeberize.demo.DemoApplicationTests  : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:07:14.259+04:00  INFO 25400 --- [worde] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:07:14.312+04:00  INFO 25400 --- [worde] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:07:14.975+04:00  INFO 25400 --- [worde] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:07:15.034+04:00  INFO 25400 --- [worde] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-07-02T06:07:15.374+04:00  INFO 25400 --- [worde] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:07:15.397+04:00  INFO 25400 --- [worde] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-02T06:07:15.530+04:00  INFO 25400 --- [worde] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:worde-test user=SA
+2026-07-02T06:07:15.531+04:00  INFO 25400 --- [worde] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-02T06:07:15.576+04:00  INFO 25400 --- [worde] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:worde-test]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-TEST/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:07:16.432+04:00  INFO 25400 --- [worde] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:07:16.484+04:00  INFO 25400 --- [worde] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:07:16.599+04:00  INFO 25400 --- [worde] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-02T06:07:17.270+04:00  INFO 25400 --- [worde] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:07:17.484+04:00  INFO 25400 --- [worde] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:07:17.947+04:00  INFO 25400 --- [worde] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-07-02T06:07:17.947+04:00  INFO 25400 --- [worde] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-07-02T06:07:17.955+04:00  INFO 25400 --- [worde] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:07:17.964+04:00  INFO 25400 --- [worde] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 17 ms
+2026-07-02T06:07:18.017+04:00  INFO 25400 --- [worde] [main] c.g.DNeberize.demo.DemoApplicationTests  : Started DemoApplicationTests in 4.788 seconds (process running for 5.714)
+2026-07-02T06:07:18.025+04:00  INFO 25400 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:07:19.440+04:00  INFO 25400 --- [worde] [main] c.g.D.demo.web.SessionController         : User signed in with username=tester01
+2026-07-02T06:07:19.528+04:00  WARN 25400 --- [worde] [main] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2026-07-02T06:07:19.706+04:00  INFO 25400 --- [worde] [main] c.g.D.demo.web.SessionController         : User signed in with username=tester02
+2026-07-02T06:07:19.711+04:00  WARN 25400 --- [worde] [main] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2026-07-02T06:07:19.861+04:00  INFO 25400 --- [worde] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.github.DNeberize.demo.ExamFeatureTests]: ExamFeatureTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-02T06:07:19.864+04:00  INFO 25400 --- [worde] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.github.DNeberize.demo.DemoApplication for test class com.github.DNeberize.demo.ExamFeatureTests
+2026-07-02T06:07:19.871+04:00  INFO 25400 --- [worde] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2026-07-02T06:07:19.903+04:00  INFO 25400 --- [worde] [main] c.g.DNeberize.demo.ExamFeatureTests      : Starting ExamFeatureTests using Java 26 with PID 25400 (started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:07:19.903+04:00 DEBUG 25400 --- [worde] [main] c.g.DNeberize.demo.ExamFeatureTests      : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:07:19.904+04:00  INFO 25400 --- [worde] [main] c.g.DNeberize.demo.ExamFeatureTests      : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:07:20.155+04:00  INFO 25400 --- [worde] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:07:20.169+04:00  INFO 25400 --- [worde] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:07:20.242+04:00  INFO 25400 --- [worde] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:07:20.262+04:00  INFO 25400 --- [worde] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:07:20.263+04:00  INFO 25400 --- [worde] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-07-02T06:07:20.265+04:00  INFO 25400 --- [worde] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:worde-exam user=SA
+2026-07-02T06:07:20.266+04:00  INFO 25400 --- [worde] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-07-02T06:07:20.267+04:00  INFO 25400 --- [worde] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:worde-exam]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-EXAM/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:07:20.315+04:00  INFO 25400 --- [worde] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:07:20.325+04:00  INFO 25400 --- [worde] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:07:20.521+04:00  INFO 25400 --- [worde] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:07:20.545+04:00  INFO 25400 --- [worde] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:07:20.627+04:00  INFO 25400 --- [worde] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-07-02T06:07:20.627+04:00  INFO 25400 --- [worde] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-07-02T06:07:20.629+04:00  INFO 25400 --- [worde] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:07:20.633+04:00  INFO 25400 --- [worde] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 6 ms
+2026-07-02T06:07:20.641+04:00  INFO 25400 --- [worde] [main] c.g.DNeberize.demo.ExamFeatureTests      : Started ExamFeatureTests in 0.77 seconds (process running for 8.338)
+2026-07-02T06:07:20.641+04:00  INFO 25400 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:07:21.543+04:00  INFO 25400 --- [worde] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:07:21.555+04:00  INFO 25400 --- [worde] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-02T06:07:21.558+04:00  INFO 25400 --- [worde] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-02T06:07:21.565+04:00  INFO 25400 --- [worde] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:07:21.569+04:00  INFO 25400 --- [worde] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-07-02T06:07:21.571+04:00  INFO 25400 --- [worde] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-07-02T06:08:02.942+04:00  INFO 7052 --- [worde] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-02T06:08:02.942+04:00  INFO 7052 --- [worde] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-02T06:08:02.943+04:00  INFO 7052 --- [worde] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-07-02T06:08:02.980+04:00  INFO 7052 --- [worde] [http-nio-8080-exec-1] freemarker.beans                         : Detected multiple classes with the same name, "com.github.DNeberize.demo.domain.AppUser". Assuming it was a class-reloading. Clearing class introspection caches to release old data.
+2026-07-02T06:08:12.488+04:00  INFO 7052 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:08:14.351+04:00  INFO 7052 --- [worde] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-02T06:08:14.353+04:00  INFO 7052 --- [worde] [Thread-14] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-02T06:08:14.357+04:00  INFO 7052 --- [worde] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-02T06:08:14.358+04:00  INFO 7052 --- [worde] [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:08:14.359+04:00  INFO 7052 --- [worde] [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-07-02T06:08:14.383+04:00  INFO 7052 --- [worde] [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-07-02T06:08:14.447+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Starting DemoApplication using Java 21.0.10 with PID 7052 (C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo\target\classes started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:08:14.448+04:00 DEBUG 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:08:14.449+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:08:14.575+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:08:14.581+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:08:14.653+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-02T06:08:14.653+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-02T06:08:14.653+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-07-02T06:08:14.671+04:00  INFO 7052 --- [worde] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 221 ms
+2026-07-02T06:08:14.703+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:08:14.711+04:00  INFO 7052 --- [worde] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:08:14.711+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-07-02T06:08:14.726+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn40: url=jdbc:h2:file:./data/worde-db user=SA
+2026-07-02T06:08:14.727+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-07-02T06:08:14.727+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/worde-db]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-DB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:08:14.773+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:08:14.775+04:00  INFO 7052 --- [worde] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:08:14.962+04:00  INFO 7052 --- [worde] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:08:14.997+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:08:15.055+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:08:15.071+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-02T06:08:15.075+04:00  INFO 7052 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:08:15.075+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Started DemoApplication in 0.644 seconds (process running for 253.859)
+2026-07-02T06:08:15.162+04:00  INFO 7052 --- [worde] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-02T06:08:16.449+04:00  INFO 7052 --- [worde] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-02T06:08:16.451+04:00  INFO 7052 --- [worde] [Thread-18] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-02T06:08:16.455+04:00  INFO 7052 --- [worde] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-02T06:08:16.457+04:00  INFO 7052 --- [worde] [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:08:16.457+04:00  INFO 7052 --- [worde] [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-07-02T06:08:16.481+04:00  INFO 7052 --- [worde] [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2026-07-02T06:08:16.540+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Starting DemoApplication using Java 21.0.10 with PID 7052 (C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo\target\classes started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:08:16.540+04:00 DEBUG 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:08:16.540+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:08:16.661+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:08:16.683+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:08:16.752+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-02T06:08:16.752+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-02T06:08:16.752+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-07-02T06:08:16.766+04:00  INFO 7052 --- [worde] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 223 ms
+2026-07-02T06:08:16.790+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:08:16.814+04:00  INFO 7052 --- [worde] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:08:16.819+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-07-02T06:08:16.827+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn50: url=jdbc:h2:file:./data/worde-db user=SA
+2026-07-02T06:08:16.827+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-07-02T06:08:16.829+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/worde-db]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-DB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:08:16.889+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:08:16.893+04:00  INFO 7052 --- [worde] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:08:17.089+04:00  INFO 7052 --- [worde] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:08:17.122+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:08:17.166+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:08:17.173+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-02T06:08:17.176+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Started DemoApplication in 0.648 seconds (process running for 255.96)
+2026-07-02T06:08:17.176+04:00  INFO 7052 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:08:17.259+04:00  INFO 7052 --- [worde] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-02T06:08:18.574+04:00  INFO 7052 --- [worde] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-02T06:08:18.575+04:00  INFO 7052 --- [worde] [Thread-22] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-02T06:08:18.579+04:00  INFO 7052 --- [worde] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-02T06:08:18.581+04:00  INFO 7052 --- [worde] [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:08:18.582+04:00  INFO 7052 --- [worde] [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-07-02T06:08:18.611+04:00  INFO 7052 --- [worde] [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2026-07-02T06:08:18.673+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Starting DemoApplication using Java 21.0.10 with PID 7052 (C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo\target\classes started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:08:18.673+04:00 DEBUG 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:08:18.673+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:08:18.780+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:08:18.789+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:08:18.841+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-02T06:08:18.846+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-02T06:08:18.847+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-07-02T06:08:18.860+04:00  INFO 7052 --- [worde] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 187 ms
+2026-07-02T06:08:18.894+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:08:18.913+04:00  INFO 7052 --- [worde] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:08:18.914+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-07-02T06:08:18.927+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn60: url=jdbc:h2:file:./data/worde-db user=SA
+2026-07-02T06:08:18.928+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-07-02T06:08:18.928+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/worde-db]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-DB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:08:18.978+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:08:18.980+04:00  INFO 7052 --- [worde] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:08:19.169+04:00  INFO 7052 --- [worde] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:08:19.199+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:08:19.237+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:08:19.245+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-02T06:08:19.249+04:00  INFO 7052 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:08:19.249+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Started DemoApplication in 0.59 seconds (process running for 258.034)
+2026-07-02T06:08:19.317+04:00  INFO 7052 --- [worde] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-02T06:08:25.678+04:00  INFO 7052 --- [worde] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-02T06:08:25.679+04:00  INFO 7052 --- [worde] [Thread-26] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-02T06:08:25.683+04:00  INFO 7052 --- [worde] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-02T06:08:25.683+04:00  INFO 7052 --- [worde] [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:08:25.685+04:00  INFO 7052 --- [worde] [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-07-02T06:08:25.706+04:00  INFO 7052 --- [worde] [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2026-07-02T06:08:25.761+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Starting DemoApplication using Java 21.0.10 with PID 7052 (C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo\target\classes started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:08:25.761+04:00 DEBUG 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:08:25.761+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:08:25.881+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:08:25.894+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:08:25.959+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-02T06:08:25.959+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-02T06:08:25.959+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-07-02T06:08:25.973+04:00  INFO 7052 --- [worde] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 211 ms
+2026-07-02T06:08:26.005+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:08:26.021+04:00  INFO 7052 --- [worde] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:08:26.021+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2026-07-02T06:08:26.031+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection conn70: url=jdbc:h2:file:./data/worde-db user=SA
+2026-07-02T06:08:26.031+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2026-07-02T06:08:26.032+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/worde-db]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-DB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:08:26.080+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:08:26.082+04:00  INFO 7052 --- [worde] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:08:26.283+04:00  INFO 7052 --- [worde] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:08:26.315+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:08:26.354+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:08:26.362+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-02T06:08:26.363+04:00  INFO 7052 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:08:26.363+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Started DemoApplication in 0.614 seconds (process running for 265.148)
+2026-07-02T06:08:26.442+04:00  INFO 7052 --- [worde] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-02T06:08:27.760+04:00  INFO 7052 --- [worde] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-02T06:08:27.761+04:00  INFO 7052 --- [worde] [Thread-30] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-02T06:08:27.764+04:00  INFO 7052 --- [worde] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-02T06:08:27.765+04:00  INFO 7052 --- [worde] [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:08:27.765+04:00  INFO 7052 --- [worde] [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2026-07-02T06:08:27.800+04:00  INFO 7052 --- [worde] [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2026-07-02T06:08:27.874+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Starting DemoApplication using Java 21.0.10 with PID 7052 (C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo\target\classes started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:08:27.874+04:00 DEBUG 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:08:27.874+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:08:27.993+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:08:28.000+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:08:28.060+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-02T06:08:28.061+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-02T06:08:28.061+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-07-02T06:08:28.076+04:00  INFO 7052 --- [worde] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 202 ms
+2026-07-02T06:08:28.106+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:08:28.120+04:00  INFO 7052 --- [worde] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:08:28.120+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2026-07-02T06:08:28.128+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection conn80: url=jdbc:h2:file:./data/worde-db user=SA
+2026-07-02T06:08:28.128+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2026-07-02T06:08:28.129+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/worde-db]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-DB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:08:28.182+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:08:28.185+04:00  INFO 7052 --- [worde] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:08:28.393+04:00  INFO 7052 --- [worde] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:08:28.424+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:08:28.463+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:08:28.472+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-02T06:08:28.474+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Started DemoApplication in 0.618 seconds (process running for 267.259)
+2026-07-02T06:08:28.474+04:00  INFO 7052 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:08:28.541+04:00  INFO 7052 --- [worde] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-02T06:08:29.867+04:00  INFO 7052 --- [worde] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-02T06:08:29.869+04:00  INFO 7052 --- [worde] [Thread-34] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-02T06:08:29.871+04:00  INFO 7052 --- [worde] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-02T06:08:29.872+04:00  INFO 7052 --- [worde] [Thread-34] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:08:29.873+04:00  INFO 7052 --- [worde] [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2026-07-02T06:08:29.893+04:00  INFO 7052 --- [worde] [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2026-07-02T06:08:29.952+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Starting DemoApplication using Java 21.0.10 with PID 7052 (C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo\target\classes started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:08:29.952+04:00 DEBUG 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:08:29.952+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:08:30.052+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:08:30.063+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:08:30.119+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-02T06:08:30.119+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-02T06:08:30.119+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-07-02T06:08:30.130+04:00  INFO 7052 --- [worde] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 173 ms
+2026-07-02T06:08:30.159+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:08:30.172+04:00  INFO 7052 --- [worde] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:08:30.174+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2026-07-02T06:08:30.183+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection conn90: url=jdbc:h2:file:./data/worde-db user=SA
+2026-07-02T06:08:30.183+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2026-07-02T06:08:30.184+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/worde-db]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-DB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:08:30.238+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:08:30.241+04:00  INFO 7052 --- [worde] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:08:30.439+04:00  INFO 7052 --- [worde] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:08:30.469+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:08:30.503+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:08:30.509+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-02T06:08:30.512+04:00  INFO 7052 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:08:30.512+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Started DemoApplication in 0.571 seconds (process running for 269.297)
+2026-07-02T06:08:30.577+04:00  INFO 7052 --- [worde] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-02T06:08:36.954+04:00  INFO 7052 --- [worde] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-02T06:08:36.955+04:00  INFO 7052 --- [worde] [Thread-38] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-02T06:08:36.958+04:00  INFO 7052 --- [worde] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-02T06:08:36.959+04:00  INFO 7052 --- [worde] [Thread-38] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:08:36.960+04:00  INFO 7052 --- [worde] [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2026-07-02T06:08:36.979+04:00  INFO 7052 --- [worde] [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2026-07-02T06:08:37.040+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Starting DemoApplication using Java 21.0.10 with PID 7052 (C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo\target\classes started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:08:37.041+04:00 DEBUG 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:08:37.041+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:08:37.165+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:08:37.175+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:08:37.229+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-02T06:08:37.231+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-02T06:08:37.231+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-07-02T06:08:37.242+04:00  INFO 7052 --- [worde] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 200 ms
+2026-07-02T06:08:37.266+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:08:37.280+04:00  INFO 7052 --- [worde] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:08:37.280+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2026-07-02T06:08:37.288+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection conn100: url=jdbc:h2:file:./data/worde-db user=SA
+2026-07-02T06:08:37.288+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2026-07-02T06:08:37.289+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/worde-db]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-DB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:08:37.343+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:08:37.346+04:00  INFO 7052 --- [worde] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:08:37.534+04:00  INFO 7052 --- [worde] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:08:37.564+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:08:37.600+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:08:37.611+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-02T06:08:37.612+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Started DemoApplication in 0.584 seconds (process running for 276.397)
+2026-07-02T06:08:37.612+04:00  INFO 7052 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:08:37.683+04:00  INFO 7052 --- [worde] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-02T06:08:39.007+04:00  INFO 7052 --- [worde] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-02T06:08:39.009+04:00  INFO 7052 --- [worde] [Thread-42] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-02T06:08:39.013+04:00  INFO 7052 --- [worde] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-02T06:08:39.014+04:00  INFO 7052 --- [worde] [Thread-42] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:08:39.014+04:00  INFO 7052 --- [worde] [Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2026-07-02T06:08:39.041+04:00  INFO 7052 --- [worde] [Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2026-07-02T06:08:39.104+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Starting DemoApplication using Java 21.0.10 with PID 7052 (C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo\target\classes started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:08:39.104+04:00 DEBUG 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:08:39.104+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:08:39.212+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:08:39.221+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:08:39.282+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-02T06:08:39.282+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-02T06:08:39.283+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-07-02T06:08:39.296+04:00  INFO 7052 --- [worde] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 192 ms
+2026-07-02T06:08:39.327+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:08:39.341+04:00  INFO 7052 --- [worde] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:08:39.341+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2026-07-02T06:08:39.350+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection conn110: url=jdbc:h2:file:./data/worde-db user=SA
+2026-07-02T06:08:39.350+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2026-07-02T06:08:39.351+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/worde-db]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-DB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:08:39.409+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:08:39.411+04:00  INFO 7052 --- [worde] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:08:39.617+04:00  INFO 7052 --- [worde] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:08:39.646+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:08:39.688+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:08:39.701+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-02T06:08:39.702+04:00  INFO 7052 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:08:39.702+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Started DemoApplication in 0.611 seconds (process running for 278.487)
+2026-07-02T06:08:39.763+04:00  INFO 7052 --- [worde] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-02T06:09:16.622+04:00  INFO 7052 --- [worde] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-02T06:09:16.624+04:00  INFO 7052 --- [worde] [Thread-46] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-02T06:09:16.627+04:00  INFO 7052 --- [worde] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-02T06:09:16.629+04:00  INFO 7052 --- [worde] [Thread-46] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:09:16.629+04:00  INFO 7052 --- [worde] [Thread-46] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2026-07-02T06:09:16.647+04:00  INFO 7052 --- [worde] [Thread-46] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2026-07-02T06:09:16.709+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Starting DemoApplication using Java 21.0.10 with PID 7052 (C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo\target\classes started by davit in C:\Users\davit\OneDrive\Documents\GitHub_Repos\demo)
+2026-07-02T06:09:16.709+04:00 DEBUG 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-07-02T06:09:16.709+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : No active profile set, falling back to 1 default profile: "dev"
+2026-07-02T06:09:16.799+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T06:09:16.807+04:00  INFO 7052 --- [worde] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 4 JPA repository interfaces.
+2026-07-02T06:09:16.857+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-02T06:09:16.857+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-02T06:09:16.857+04:00  INFO 7052 --- [worde] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-07-02T06:09:16.877+04:00  INFO 7052 --- [worde] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 168 ms
+2026-07-02T06:09:16.907+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T06:09:16.921+04:00  INFO 7052 --- [worde] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T06:09:16.921+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2026-07-02T06:09:16.931+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection conn120: url=jdbc:h2:file:./data/worde-db user=SA
+2026-07-02T06:09:16.931+04:00  INFO 7052 --- [worde] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2026-07-02T06:09:16.932+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/worde-db]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: WORDE-DB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T06:09:16.995+04:00  INFO 7052 --- [worde] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T06:09:16.999+04:00  INFO 7052 --- [worde] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T06:09:17.178+04:00  INFO 7052 --- [worde] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-02T06:09:17.207+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-07-02T06:09:17.250+04:00  INFO 7052 --- [worde] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-07-02T06:09:17.257+04:00  INFO 7052 --- [worde] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-02T06:09:17.259+04:00  INFO 7052 --- [worde] [scheduling-1] c.g.D.d.s.DictionaryRefreshScheduler     : Cleared dictionarySize cache
+2026-07-02T06:09:17.259+04:00  INFO 7052 --- [worde] [restartedMain] c.github.DNeberize.demo.DemoApplication  : Started DemoApplication in 0.562 seconds (process running for 316.044)
+2026-07-02T06:09:17.316+04:00  INFO 7052 --- [worde] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

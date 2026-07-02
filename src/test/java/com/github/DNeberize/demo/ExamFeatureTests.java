@@ -33,7 +33,7 @@ class ExamFeatureTests {
 
     @Test
     void localeCanBeChangedViaQueryParameter() throws Exception {
-        mockMvc.perform(get("/?lang=tr"))
+        mockMvc.perform(get("/?lang=ka"))
                 .andExpect(status().isOk());
     }
 }
